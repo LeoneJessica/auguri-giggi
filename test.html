@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Test vecchiaia per Giggi</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 50px;
+      font-family: 'Courier New', Courier, monospace;
+      background: #fff;
+      color: #000;
+    }
+
+    .card {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 40px;
+      border: 1px solid #000;
+      text-align: left;
+      position: relative;
+      min-height: 420px;
+    }
+
+    h1 {
+      font-size: 1.8em;
+      margin-bottom: 1em;
+      border-bottom: 1px solid #000;
+      padding-bottom: 5px;
+    }
+
+    p {
+      font-size: 1.05em;
+      line-height: 1.5;
+      margin-bottom: 1.4em;
+    }
+
+    .qr-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .qr-text {
+      flex: 1;
+    }
+
+    .qr-img {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .qr-img img {
+      width: 140px;
+      height: 140px;
+    }
+
+    .auguri {
+      position: absolute;
+      bottom: 20px;
+      right: 30px;
+      font-size: 1em;
+      font-style: italic;
+    }
+
+    @media print {
+      .card {
+        border: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="qr-row">
+      <div class="qr-text">
+        <h1>Test vecchiaia per Giggi</h1>
+
+        <p>
+          Gli anni iniziano a diventare troppi... quindi è giusto fare un check!
+        </p>
+
+        <p>
+          Per verificare che le funzioni vitali siano ancora in buone condizioni, ecco una semplice prova.
+        </p>
+
+        <p>
+          Apri il link qui accanto. Se ci riesci senza brontolare, sbuffare o chiedere aiuto, sei ancora nel club dei “giovani dentro”.
+        </p>
+
+        <p>
+          Se invece imprechi o ti perdi... forse è arrivato il momento di un piccolo aggiornamento di sistema.
+        </p>
+      </div>
+
+      <div class="qr-img">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://leonejessica.github.io/auguri-giggi/" alt="QR Code">
+      </div>
+    </div>
+
+    <div class="auguri">
+      Auguri Giggi da Jeffer 🎉🍻
+    </div>
+  </div>
+</body>
+</html>
